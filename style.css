@@ -1,0 +1,70 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Центрирование по горизонтали */
+    align-items: center; /* Центрирование по вертикали */
+    height: 100vh; /* Высота окна браузера */
+}
+
+.container {
+    text-align: center; /* Выравнивание текста внутри контейнера */
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Легкая тень для эффекта карточки */
+    width: 100%;
+    max-width: 400px; /* Максимальная ширина контейнера */
+}
+
+h1 {
+    color: #333;
+    margin-top: 0;
+    font-size: 2em; /* Увеличение размера заголовка */
+}
+
+p {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Стили для полей ввода */
+input[type="text"], input[type="number"] {
+    width: 80%; /* Ограничиваем ширину до 80% контейнера */
+    max-width: 300px; /* Максимальная ширина поля ввода */
+    padding: 10px;
+    font-size: 1em;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Стили для кнопки */
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 80%; /* Ограничиваем ширину до 80% контейнера */
+    transition: background-color 0.3s ease; /* Анимация при наведении */
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Стили для меток (labels) */
+label {
+    display: block; /* Отображать метки по отдельности */
+    margin-top: 10px;
+    font-size: 1em;
+    color: #333;
+}

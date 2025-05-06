@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Угадай число (для двоих)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Главный контейнер -->
+<div class="container">
+  <h1>Угадай число (для двоих)</h1>
+  <p id="message">Введите имена игроков и начните игру!</p>
+
+  <!-- Ввод имён -->
+  <label for="player1Name">Имя первого игрока:</label>
+  <input type="text" id="player1Name" placeholder="Введи имя" />
+
+  <label for="player2Name">Имя второго игрока:</label>
+  <input type="text" id="player2Name" placeholder="Введи имя" />
+
+  <!-- Кнопка начала игры -->
+  <button id="startGame">Начать игру</button>
+
+  <!-- Ходы игроков -->
+  <div id="gameArea" style="display: none;">
+    <p id="rangeMessage">Компьютер загадал число от 1 до 100.</p>
+    <p id="currentPlayerTurn"></p>
+
+    <div id="player1Turn">
+      <p><span id="player1Label"></span>, введите ваше число:</p>
+      <input type="number" id="player1Input" placeholder="Введите число" />
+      <button id="submitPlayer1">Подтвердить</button>
+    </div>
+
+    <div id="player2Turn" style="display: none;">
+      <p><span id="player2Label"></span>, введите ваше число:</p>
+      <input type="number" id="player2Input" placeholder="Введите число" />
+      <button id="submitPlayer2">Подтвердить</button>
+    </div>
+  </div>
+
+  <!-- Результат -->
+  <div id="result" style="display: none;">
+    <p id="resultMessage"></p>
+    <button id="restartGame">Начать заново</button>
+  </div>
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
